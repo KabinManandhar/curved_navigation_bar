@@ -110,12 +110,26 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                   0,
                   -(1 - _buttonHide) * 80,
                 ),
-                child: Material(
-                  color: widget.buttonBackgroundColor ?? widget.color,
-                  type: MaterialType.circle,
-                  child: Padding(
+                child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: _icon,
+                    child: Container(
+                      width: 64,
+                      height: 64,
+                      child: _icon,
+                      decoration: BoxDecoration(
+                          color: Color(0xFFF1F2F6),
+                          borderRadius: BorderRadius.circular(32),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Color(0xFFDADFF0),
+                                offset: Offset(8, 6),
+                                blurRadius: 8),
+                            BoxShadow(
+                                color: Colors.white,
+                                offset: Offset(-8, -6),
+                                blurRadius: 8),
+                          ]),
+                    ),
                   ),
                 ),
               ),
@@ -155,7 +169,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
     );
   }
 
-  void setPage(int index){
+  void setPage(int index) {
     _buttonTap(index);
   }
 
