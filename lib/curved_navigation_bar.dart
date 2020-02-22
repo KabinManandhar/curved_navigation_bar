@@ -117,7 +117,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                     width: 64.0,
                     child: _icon,
                     decoration: BoxDecoration(
-                        color: Color(0xFFF1F2F6),
+                        color: Colors.white, //Color(0xFFF1F2F6),
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
                           BoxShadow(
@@ -125,7 +125,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                               offset: Offset(8, 6),
                               blurRadius: 8),
                           BoxShadow(
-                              color: Colors.white,
+                              color: Color(0xFFDADFF0), //Colors.white,
                               offset: Offset(-8, -6),
                               blurRadius: 8),
                         ]),
