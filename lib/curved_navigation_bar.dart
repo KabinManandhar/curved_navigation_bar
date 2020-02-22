@@ -25,14 +25,10 @@ class CurvedNavigationBar extends StatefulWidget {
     this.animationCurve = Curves.easeOut,
     this.animationDuration = const Duration(milliseconds: 600),
     this.height = 75.0,
-    this.buttonHeight = 64.0,
-    this.buttonWidth = 64.0,
   })  : assert(items != null),
         assert(items.length >= 1),
         assert(0 <= index && index < items.length),
         assert(0 <= height && height <= 75.0),
-        assert(0 <= buttonWidth && buttonWidth <= 64.0),
-        assert(0 <= buttonHeight && buttonHeight <= 64.0),
         super(key: key);
 
   @override
@@ -117,8 +113,8 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: widget.buttonHeight,
-                    width: widget.buttonWidth,
+                    height: 64.0,
+                    width: 64.0,
                     child: _icon,
                     decoration: BoxDecoration(
                         color: Color(0xFFF1F2F6),
