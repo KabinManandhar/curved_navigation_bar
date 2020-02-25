@@ -111,7 +111,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                   -(1 - _buttonHide) * 80,
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(64.0),
                   child: Container(
                     height: 64.0,
                     width: 64.0,
