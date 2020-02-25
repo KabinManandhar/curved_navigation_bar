@@ -113,12 +113,12 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: 64.0,
-                    width: 64.0,
+                    height: 48.0,
+                    width: 48.0,
                     child: _icon,
                     decoration: BoxDecoration(
                         color: Color(0xFFF1F2F6),
-                        borderRadius: BorderRadius.circular(32),
+                        borderRadius: BorderRadius.circular(24),
                         boxShadow: [
                           BoxShadow(
                               color: Color(0xFFDADFF0),
