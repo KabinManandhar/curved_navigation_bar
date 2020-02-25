@@ -121,7 +121,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                         borderRadius: BorderRadius.circular(24),
                         boxShadow: [
                           BoxShadow(
-                              color: Color(0xFFDADFF0),
+                              color: Colors.transparent,
                               offset: Offset(8, 6),
                               blurRadius: 8),
                           BoxShadow(
