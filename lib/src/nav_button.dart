@@ -23,6 +23,19 @@ class NavButton extends StatelessWidget {
         },
         child: Container(
             height: 75.0,
+            decoration: BoxDecoration(
+                color: Colors.transparent,
+                borderRadius: BorderRadius.circular(24),
+                boxShadow: [
+                  BoxShadow(
+                      color: Color(0xFFDADFF0),
+                      offset: Offset(8, 6),
+                      blurRadius: 8),
+                  BoxShadow(
+                      color: Colors.white,
+                      offset: Offset(-8, -6),
+                      blurRadius: 8),
+                ]),
             child: Transform.translate(
               offset: Offset(
                   0, difference < 1.0 / length ? verticalAlignment * 40 : 0),
