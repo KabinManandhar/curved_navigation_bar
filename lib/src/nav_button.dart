@@ -22,10 +22,10 @@ class NavButton extends StatelessWidget {
           onTap(index);
         },
         child: Container(
-            height: 75.0,
+            height: 70.0,
             decoration: BoxDecoration(
                 color: Colors.transparent,
-                borderRadius: BorderRadius.circular(24),
+                borderRadius: BorderRadius.circular(35),
                 boxShadow: [
                   BoxShadow(
                       color: Color(0xFFDADFF0),
