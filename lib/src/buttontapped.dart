@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ButtonTapped extends StatelessWidget {
-  var icon;
+  Icon icon;
 
   ButtonTapped({
     Key key,
@@ -16,11 +16,7 @@ class ButtonTapped extends StatelessWidget {
         padding: EdgeInsets.all(5),
         child: Container(
           padding: EdgeInsets.all(20),
-          child: Icon(
-            icon,
-            size: 25,
-            color: Colors.grey[700],
-          ),
+          child: icon,
           decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.grey[300],

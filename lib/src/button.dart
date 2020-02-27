@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
-  var icon;
+  Icon icon;
 
   MyButton({
     Key key,
@@ -14,11 +14,7 @@ class MyButton extends StatelessWidget {
       padding: EdgeInsets.all(4),
       child: Container(
         padding: EdgeInsets.all(20),
-        child: Icon(
-          icon,
-          size: 25,
-          color: Colors.grey[800],
-        ),
+        child: icon,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: Colors.grey[300],
