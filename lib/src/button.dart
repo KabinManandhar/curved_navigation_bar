@@ -16,7 +16,7 @@ class MyButton extends StatelessWidget {
         height: 50,
         width: 50,
         padding: EdgeInsets.all(20),
-        child: icon,
+        child: Center(child: icon),
         decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: Colors.grey[300],

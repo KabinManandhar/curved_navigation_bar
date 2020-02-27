@@ -18,7 +18,7 @@ class ButtonTapped extends StatelessWidget {
         padding: EdgeInsets.all(5),
         child: Container(
           padding: EdgeInsets.all(20),
-          child: icon,
+          child: Center(child: icon),
           decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.grey[300],
