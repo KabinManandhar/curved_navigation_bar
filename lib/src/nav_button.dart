@@ -40,7 +40,7 @@ class NavButton extends StatelessWidget {
               offset: Offset(
                   0, difference < 1.0 / length ? verticalAlignment * 40 : 0),
               child: Opacity(
-                  opacity: difference < 1.0 / length * 0.99 ? opacity : 1.0,
+                  opacity: difference < 1.0 / length * 0.99 ? opacity : 0.0,
                   child: child),
             )),
       ),
