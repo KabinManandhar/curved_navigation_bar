@@ -13,6 +13,8 @@ class ButtonTapped extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(4),
       child: Container(
+        height: 50,
+        width: 50,
         padding: EdgeInsets.all(5),
         child: Container(
           padding: EdgeInsets.all(20),
