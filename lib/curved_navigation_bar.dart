@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/src/button.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 import 'src/nav_button.dart';
@@ -24,11 +25,11 @@ class CurvedNavigationBar extends StatefulWidget {
     this.onTap,
     this.animationCurve = Curves.easeOut,
     this.animationDuration = const Duration(milliseconds: 600),
-    this.height = 70.0,
+    this.height = 50.0,
   })  : assert(items != null),
         assert(items.length >= 1),
         assert(0 <= index && index < items.length),
-        assert(0 <= height && height <= 70.0),
+        assert(0 <= height && height <= 50.0),
         super(key: key);
 
   @override
@@ -96,7 +97,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
         alignment: Alignment.bottomCenter,
         children: <Widget>[
           Positioned(
-            bottom: -40 - (70.0 - widget.height),
+            bottom: -40 - (50.0 - widget.height),
             left: Directionality.of(context) == TextDirection.rtl
                 ? null
                 : _pos * size.width,
@@ -110,26 +111,8 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                   0,
                   -(1 - _buttonHide) * 80,
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    height: 70.0,
-                    width: 70.0,
-                    child: _icon,
-                    decoration: BoxDecoration(
-                        color: Colors.transparent,
-                        borderRadius: BorderRadius.circular(35),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(8, 6),
-                              blurRadius: 8),
-                          BoxShadow(
-                              color: Color(0xFFDADFF0), //Colors.white,
-                              offset: Offset(-8, -6),
-                              blurRadius: 8),
-                        ]),
-                  ),
+                child: MyButton(
+                  icon: _icon,
                 ),
               ),
             ),
@@ -137,19 +120,19 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
           Positioned(
             left: 0,
             right: 0,
-            bottom: 0 - (70.0 - widget.height),
+            bottom: 0 - (50.0 - widget.height),
             child: CustomPaint(
               painter: NavCustomPainter(
                   _pos, _length, widget.color, Directionality.of(context)),
               child: Container(
-                height: 70.0,
+                height: 50.0,
               ),
             ),
           ),
           Positioned(
             left: 0,
             right: 0,
-            bottom: 0 - (70.0 - widget.height),
+            bottom: 0 - (50.0 - widget.height),
             child: SizedBox(
                 height: 100.0,
                 child: Row(
