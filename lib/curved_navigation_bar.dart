@@ -1,4 +1,5 @@
 import 'package:curved_navigation_bar/src/button.dart';
+import 'package:curved_navigation_bar/src/buttontapped.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 import 'src/nav_button.dart';
@@ -111,7 +112,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                   0,
                   -(1 - _buttonHide) * 80,
                 ),
-                child: MyButton(
+                child: ButtonTapped(
                   icon: _icon,
                 ),
               ),

@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/src/button.dart';
 import 'package:curved_navigation_bar/src/buttontapped.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +31,7 @@ class NavButton extends StatelessWidget {
                 0, difference < 1.0 / length ? verticalAlignment * 40 : 0),
             child: Opacity(
                 opacity: difference < 1.0 / length * 0.99 ? opacity : 1.0,
-                child: ButtonTapped(
+                child: MyButton(
                   icon: child,
                 )),
           )),
