@@ -30,7 +30,7 @@ class NavButton extends StatelessWidget {
                 0, difference < 1.0 / length ? verticalAlignment * 40 : 0),
             child: Opacity(
                 opacity: difference < 1.0 / length * 0.99 ? opacity : 1.0,
-                child: SoftButton(
+                child: Button(
                   icon: child,
                 )),
           )),
