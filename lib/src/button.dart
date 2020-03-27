@@ -54,7 +54,7 @@
 import 'package:flutter/material.dart';
 
 class SoftButton extends StatefulWidget {
-  final icon;
+  final Widget icon;
   final bool opacity;
   final String label;
   final double radius;
@@ -143,9 +143,7 @@ class _SoftButtonState extends State<SoftButton> {
                     padding: EdgeInsets.all(0),
                     color: Colors.grey[900],
                     iconSize: tapCheck ? widget.iconSize - 1 : widget.iconSize,
-                    icon: Icon(
-                      widget.icon,
-                    ),
+                    icon: widget.icon,
                     onPressed: null,
                   )
                 : Icon(null),
