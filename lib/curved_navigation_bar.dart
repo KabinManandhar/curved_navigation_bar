@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/src/buttontapped.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 import 'src/nav_button.dart';
+import 'src/button.dart';
 import 'src/nav_custom_painter.dart';
 
 class CurvedNavigationBar extends StatefulWidget {
@@ -111,7 +112,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                   0,
                   -(1 - _buttonHide) * 80,
                 ),
-                child: ButtonTapped(
+                child: SoftButton(
                   icon: _icon,
                 ),
               ),
