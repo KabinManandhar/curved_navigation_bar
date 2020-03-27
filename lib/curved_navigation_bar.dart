@@ -1,4 +1,3 @@
-import 'package:curved_navigation_bar/src/buttontapped.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 import 'src/nav_button.dart';
