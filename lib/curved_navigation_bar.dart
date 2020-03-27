@@ -112,7 +112,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                   0,
                   -(1 - _buttonHide) * 80,
                 ),
-                child: SoftButton(
+                child: IdleButton(
                   icon: _icon,
                 ),
               ),
