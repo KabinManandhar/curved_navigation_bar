@@ -1,4 +1,3 @@
-import 'package:curved_navigation_bar/src/softButton.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 import 'src/nav_button.dart';
@@ -112,7 +111,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
                   0,
                   -(1 - _buttonHide) * 80,
                 ),
-                child: SoftButton(
+                child: Button(
                   icon: _icon,
                 ),
               ),
