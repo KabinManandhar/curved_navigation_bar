@@ -1,5 +1,4 @@
 import 'package:curved_navigation_bar/src/button.dart';
-import 'package:curved_navigation_bar/src/softButton.dart';
 import 'package:flutter/material.dart';
 
 class NavButton extends StatelessWidget {
